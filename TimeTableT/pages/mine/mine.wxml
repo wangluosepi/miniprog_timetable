@@ -1,0 +1,14 @@
+<!--导航栏区域-->
+<cu-custom bgColor="bg-white" customBack="{{true}}">
+  <view slot="content">
+    <text class="title">个人中心</text>
+  </view>
+</cu-custom>
+<!--导航栏区域-->
+<view class="myInfo">
+  <image class="myAvatar" src="{{userInfo.avatarUrl}}"></image>
+  <view class="myNickName">{{userInfo.nickName}}</view>
+  <button class="clickLogin" bind:tap="login">授权登录</button>
+</view>
+
+

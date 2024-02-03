@@ -1,0 +1,48 @@
+{
+  "lazyCodeLoading": "requiredComponents",
+  "pages": [
+    "pages/course/course",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/searchclass/searchclass",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "/style/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#9E9E9E",
+    "selectedColor": "#444444",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "课程表",
+        "iconPath": "/image/课程表(未选中).png",
+        "selectedIconPath": "/image/课程表(已选中).png",
+        "pagePath": "pages/course/course"
+      },
+      {
+        "text": "查找",
+        "iconPath": "/image/搜索(未选中).png",
+        "selectedIconPath": "/image/搜索(已选中).png",
+        "pagePath": "pages/searchclass/searchclass"
+      },
+      {
+        "text": "个人中心",
+        "iconPath": "/image/个人中心(未选中).png",
+        "selectedIconPath": "/image/个人中心(已选中).png",
+        "pagePath": "pages/mine/mine"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

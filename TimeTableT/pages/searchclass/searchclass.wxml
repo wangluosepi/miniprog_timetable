@@ -1,0 +1,17 @@
+<!--导航栏区域-->
+<cu-custom bgColor="bg-white" customBack="{{true}}">
+  <view slot="content">
+    <text class="title">无课查找</text>
+  </view>
+</cu-custom>
+<!--导航栏区域-->
+<van-dropdown-menu active-color="##32CD32">
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+  <van-dropdown-item value="{{ value3 }}" options="{{ option3 }}" />
+</van-dropdown-menu>
+<view class="searchBox">
+  <text class="prompt">本页面可以查询某一时\n间没有课程的老师哦！</text>
+  <button  class="userClick" size="default" type="primary" bind:tap="goto">查询</button>
+</view>
+

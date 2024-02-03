@@ -1,0 +1,24 @@
+/*对于页面标题的样式定义*/
+.title{
+  font-size: 40rpx;
+}
+/*对于页面容器样式的定义*/
+.searchBox{
+  display:grid;
+}
+/*对于提示词的样式的定义*/
+.prompt{
+  font-size: 50rpx;
+  color: #868080;
+  margin-left: 120rpx;
+  margin-top: 40rpx;
+  position: relative;
+  justify-content: center;
+}
+/*对于按钮的样式定义*/
+.userClick{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top:700rpx;
+}

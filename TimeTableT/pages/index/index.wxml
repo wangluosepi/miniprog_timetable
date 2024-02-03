@@ -1,0 +1,8 @@
+<cu-custom bgColor="bg-white" customBack="{{true}}">
+  <view slot="backText">
+    <image class="wantback" src="/image/返回.png" mode="aspectFill" bind:tap="onClick"></image>
+  </view>
+  <view slot="content">
+    <text class="title">查询结果</text>
+  </view>
+</cu-custom>

@@ -1,0 +1,52 @@
+<!--导航栏区域-->
+<cu-custom bgColor="bg-white" customBack="{{true}}">
+  <view slot="backText">
+    <image class="refresh-btn" src="/image/刷新.png" mode="aspectFill"></image>
+  </view>
+  <view slot="content">
+    <text bindtap="SelectWeek" class="title">第{{nowWeek}}周</text> 
+    <text class="cuIcon-unfold"></text>
+  </view>
+</cu-custom>
+<!--导航栏区域-->
+<!--课程表区域-->
+<view class="container">
+  <view class="week-list">
+    <view class="now-month">
+      <text>星期日期</text> <!--显示表头-->
+    </view>
+    <view class="week-item" wx:for="{{WeekDays}}" wx:for-item="WeekDays"> <!--利用for循环显示周数-->
+      <text class="week-name">周{{WeekDays.day}}</text>
+      <!-- <text class="week-date">{{Weekcalendar[index] == 1 ? ((NowMonth == 12 ? 1 : (NowMonth + 1))) + NowMonth}}-{{(Weekcalendar[index] < 9 ? '0' : ' ' ) + Weekcalendar[index] }}</text> -->
+      <text class="week-date">{{Weekcalendar[index].month}}-{{Weekcalendar[index].day}}</text>
+    </view>
+  </view>
+  <view class="course-content">
+    <view class="course-nums">
+      <view wx:for="{{ClassTimeA}}" wx:for-item="Time">
+        <text class="course-section">{{Time.section}}</text>
+        <text class="course-time">{{Time.start}}\n{{Time.end}}</text>
+      </view>
+    </view>
+    <view class="course-list">
+      <view class="course-item" wx:for="{{courseList}}" wx:key="key" style= "top:{{(item.section-1)*110}}rpx;left:{{(item.week-1)*((windowWidth*2-100)/7)}}rpx;height:{{item.sectionCount * 110}}rpx;"> 
+        <view class="class-item_content" style="background-color:{{item.color}};">
+          {{item.name}}@{{item.address}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>  
+<!--课程表区域-->  
+<!--切换周数区域-->  
+<van-popup show="{{ShowSwitchWeek}}" position="top"  bind:close="hideSwitchWeek" bind:close="HindSwitchWeek">
+  <view class="Switch-Week_popup">
+    <!--<view class="Switch-Week_title">切换周期</view>-->
+    <view class="Switch-Week_list">
+      <view bindtap="SwitchWeek" data-week="{{item+1}}"class="Switch-week_item" wx:for="{{TotalWeek}}">
+        <view class="Switch-week_item-box {{nowWeek==index+1 ? 'active' : ''}}">{{item+1}}</view>
+      </view>
+    </view>
+  </view>
+</van-popup>
+<!--切换周数区域-->

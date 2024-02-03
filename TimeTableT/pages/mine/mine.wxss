@@ -1,0 +1,24 @@
+.title{
+  font-size: 40rpx;
+}
+.myInfo{
+  text-align: center;
+  background-color: white;
+  height: 300rpx;
+}
+.myAvatar{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-left:-550rpx;
+  margin-top: 15rpx;
+}
+.myNickName{
+  margin-top:-100rpx;
+  margin-left:-250rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.clickLogin{
+  margin-top: 80rpx;
+}
