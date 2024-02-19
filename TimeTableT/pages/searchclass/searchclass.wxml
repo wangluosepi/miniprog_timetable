@@ -6,9 +6,11 @@
 </cu-custom>
 <!--导航栏区域-->
 <van-dropdown-menu active-color="##32CD32">
-  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
-  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
-  <van-dropdown-item value="{{ value3 }}" options="{{ option3 }}" />
+  <van-dropdown-item model:value="{{ value4 }}" options="{{ option4 }}" />
+  <van-dropdown-item model:value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item model:value="{{ value2 }}" options="{{ option2 }}" />
+  <van-dropdown-item model:value="{{ value3 }}" options="{{ option3 }}" />
+  <van-dropdown-item model:value="{{ value5 }}" options="{{ option5 }}" />
 </van-dropdown-menu>
 <view class="searchBox">
   <text class="prompt">本页面可以查询某一时\n间没有课程的老师哦！</text>
