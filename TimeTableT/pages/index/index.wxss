@@ -5,3 +5,15 @@
   width: 39rpx;
   height: 39rpx;
 }
+.aside{
+  font-weight: bold;
+}
+.teacherId{
+  font-weight: bold;
+}
+.teacherName{
+  font-weight: bold;
+}
+.teacherCollege{
+  font-weight: bold;
+}
