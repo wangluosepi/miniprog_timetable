@@ -6,3 +6,11 @@
     <text class="title">查询结果</text>
   </view>
 </cu-custom>
+<view class="aside">返回结果如下:</view>
+<text>\n</text>
+<view class="showData" wx:for="{{getData}}" wx:key="*this">
+    <view class="teacherId">工号：{{item.id}}</view>
+    <view class="teacherName">姓名：{{item.nickname}}</view>
+    <view class="teacherCollege">学院：{{item.department}}</view>
+    <text>\n</text>
+</view>
